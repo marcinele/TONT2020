@@ -61,15 +61,6 @@ plot(t,y(:,3));
 title("Napiecie dla skoku jednostkowego");
 
 %Sinusek z 3 i 5 harmoniczną 
-t = 0.001:dt:100;
-x_sin = zeros(3,length(t));
-[t,y] = ode45(@rlc_sin, t, x_sin(:,1));
-figure();
-R2 = 0.5;
-plot(t, y(:,2)*R2);
-title("Spadek napiecia na R2");
-figure();
-plot(t, sin(3*t)+sin(5*t));
-title("Sinus z 3 i 5 harmoniczną");
-
+x_sin = zeros9
+[t,y] = ode45(@rlc_sin, t, 
 
