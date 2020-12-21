@@ -8,4 +8,8 @@ t = 0.001:dt:T;
 x = zeros(3, length(t));
 [t,y] = ode45(@rlc, [0.001:0.001:24], x(:,1));
 
-plot(t,y);
+plot(t,y(:,1));
+hold on;
+plot(t,y(:,2));
+figure();
+plot(t,y(:,3));
